@@ -12,17 +12,17 @@
 # Structure of Project
   - `src` folder contains below folders
   
-  1. components
+  1. `components`
     * Components folder contains all the components used 
 
-  2. screens
+  2. `screens`
     * screens folder contains productList screen where the required implementation is done
 
-  3. utils
+  3. `utils`
     * utils folder contains all the utility methods
 
 # Info about each file
   * each components & screens folder contains below files
-    - index file with component implementation
-    - types file with required type definations for the component
-    - styles.css file contains styles for each component 
+    - `index` file with component implementation
+    - `types` file with required type definations for the component
+    - `styles.css` file contains styles for each component 
