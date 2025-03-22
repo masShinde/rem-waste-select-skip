@@ -1,0 +1,13 @@
+.info-tag-wrapper{
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 8px;
+    margin: 4px;
+}
+
+
+@media only screen and (max-device-width: 720px){
+    .info-tag-wrapper{
+        display: none;
+    }
+}

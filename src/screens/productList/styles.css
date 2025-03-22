@@ -1,0 +1,14 @@
+.product-list-container{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+    padding: 0.5rem;
+}
+
+@media only screen and (max-device-width: 1240px){
+    .product-list-container{
+        justify-content: center;
+    }
+}
