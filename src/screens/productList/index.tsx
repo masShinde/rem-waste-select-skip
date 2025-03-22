@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./styles.css";
 import { SkipType } from "./ProductListPropTypes";
 import ProductCard from "../../components/productCard";
@@ -10,6 +10,7 @@ export default function ProductList() {
   const [skips, setSkips] = useState<SkipType[]>([]);
   const [selectedId, setSelectedId] = useState(-1);
   const [isNextClicked, setIsNextClicked] = useState(false);
+  const timerId = useRef<number>(null)
   const fetchSkips = async () => {
     try {
       const skips = await fetch(
@@ -30,6 +31,10 @@ export default function ProductList() {
       }));
       setSkips(updatedValue);
     });
+
+    return () => {
+      timerId.current && clearTimeout(timerId.current)
+    }
   }, []);
 
   const handleCardSelection = (id: number) => {
@@ -39,7 +44,8 @@ export default function ProductList() {
 
   const onNextButtonClick = () => {
     setIsNextClicked(true);
-    setTimeout(() => {
+    timerId.current = setTimeout(() => {
+      timerId.current = null;
       setIsNextClicked(false);
     }, 5000);
   };
