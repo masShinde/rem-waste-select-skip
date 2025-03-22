@@ -8,6 +8,7 @@
     color: #000;
     justify-content: space-between;
     margin: 0.5rem ;
+    border: 1px solid #c2c2c2;
 }
 
 .product-card-img{
@@ -16,7 +17,6 @@
     height: auto;
     overflow: hidden;
     object-fit: contain;
-    border: 1px solid #000;
     border-radius: 1rem;
 }
 

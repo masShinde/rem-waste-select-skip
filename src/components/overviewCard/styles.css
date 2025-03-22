@@ -1,0 +1,26 @@
+.over-view-card-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.selected-item{
+    margin: 0 4rem;
+}
+
+.over-view-card-button{
+    margin: 0 4rem;
+}
+
+@media only screen and (max-device-width: 1240px){
+    .selected-item{
+        margin: 0 0.5rem;
+    }
+    
+    .over-view-card-button{
+        margin: 0 0.5rem;
+    }
+    
+}

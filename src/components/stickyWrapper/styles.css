@@ -1,0 +1,16 @@
+.sticky-container{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #c13333;
+    color: #fff;
+    padding: 0.5rem; 
+  }
+

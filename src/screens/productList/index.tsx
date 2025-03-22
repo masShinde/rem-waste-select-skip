@@ -76,7 +76,9 @@ export default function ProductList() {
           );
         })}
       </div>
-    
+      {(selectedId > -1) && <StickyWrapper >
+        <OverViewCard text={`${skips?.find(skip => skip.id === selectedId)?.size} Skip Selected`} buttonText={"Next"} />
+      </StickyWrapper>}
     </>
   );
 }

@@ -40,6 +40,19 @@ button:focus-visible {
   outline: 4px auto;
 }
 
+
+@media only screen and (max-device-width: 340px){
+  button{
+    min-width: 7rem;
+    margin-right: 1rem;
+  }
+  
+}
+
+
+
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
