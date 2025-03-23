@@ -1,4 +1,4 @@
-import { useMemo, memo } from "react";
+import { memo } from "react";
 import { truncateString } from "../../utils.ts";
 import InfoTag from "../infoTag/index.tsx";
 import { ProductCardPropTypes } from "./ProductCardPropTypes";
